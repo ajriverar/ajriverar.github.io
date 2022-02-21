@@ -1,0 +1,46 @@
+{
+  "tickets": [
+    {
+      "id": "c621231b-b173-4d8d-a5c8-1f70d3f0c825",
+      "cliente": "Zapatería Shoes",
+      "solicitud": "Fallo al agregar productos al catálogo",
+      "fecha": "2021-10-31",
+      "completada": true
+    },
+    {
+      "id": "2f38a28f-1767-48e8-acb7-ca90dbc5fac2",
+      "cliente": "Banco Solidario",
+      "solicitud": "Añadir nueva opción de informe consolidado",
+      "fecha": "2021-11-22",
+      "completada": false
+    },
+    {
+      "id": "26f369a9-a28b-4889-b7ff-feb136dc05fd",
+      "cliente": "Paresa",
+      "solicitud": "Mejorar rendimiento informes",
+      "fecha": "2021-11-23",
+      "completada": false
+    },
+    {
+      "id": "44b9dac1-beaa-4312-a178-ce9538048db6",
+      "cliente": "Paresa",
+      "solicitud": "Mejorar rendimiento informes",
+      "fecha": "2022-0-0",
+      "completada": false
+    },
+    {
+      "id": "96045851-9052-45a0-8d77-d280809480e4",
+      "cliente": "Paresa",
+      "solicitud": "Mejorar rendimiento informes",
+      "fecha": "2022-1-1",
+      "completada": false
+    },
+    {
+      "id": "48986d0e-56bc-4a0b-ad74-79982cc367c9",
+      "cliente": "Paresa",
+      "solicitud": "Mejorar rendimiento informes",
+      "fecha": "2022-1-2",
+      "completada": false
+    }
+  ]
+}
