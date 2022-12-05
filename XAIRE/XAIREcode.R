@@ -20,12 +20,9 @@ library(scmamp) 		# statistical tests
 #Basic exploratory analysis of the problem data (Min., Max., Mean, Median, ...) 
 summary(data$output) 
 
-
 # Correlation analysis between arrivals variable versus days of the week
 boxplot(Arrivals ~ Weekday, xaxt="n",data = data, xlab="Weekday", ylab = "Arrivals in ED")
 axis(1, at = 1:7, labels = c("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"))
-
-###############studen16 = t.test(SUEF16, SUJA16, alternative = "two.sided")  # test de student
 
 # Arrival series definition
 arrivalSeries = ts(data$Arrivals)  
