@@ -37,6 +37,7 @@ int configura_servidor(const char *puerto) {
     if(bind(unsocket, resultado->ai_addr, resultado->ai_addrlen)) ERROR("bind()"); 
     // Llamar a listen para poner el socket en modo escucha, controlando errores
     if(listen(unsocket, 10)) ERROR("listen()"); 
+    cout << "Servidor escuchando en el puerto " << puerto << endl;
 
     return unsocket;
 }
@@ -108,9 +109,11 @@ int main(int argc, char *argv[]) {
         longdircliente = sizeof dircliente; 
 
         auto socketcliente = accept(misocket,(struct sockaddr *)&dircliente, &longdircliente); 
+        notifica_cliente(&dircliente);
 
         auto bytesrecibidos = recv(socketcliente, peticion, sizeof peticion, 0);
         peticion_str = string(peticion, bytesrecibidos);
+        cout << "Petición recibida: " << peticion_str << endl;
 
         if(socketcliente != -1) { 
             if(peticion_str.substr(0, 3) == "IMC") {
